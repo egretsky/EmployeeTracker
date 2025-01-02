@@ -7,7 +7,7 @@ export const viewAllEmployees = async () => {
         return result.rows;
     }
     catch (error) {
-        console.error('Error -', error);
+        console.error('View Error -', error);
         throw error;
     }
 };
@@ -19,7 +19,7 @@ export const addEmployee = async(first_name: string, last_name: string, roleId: 
         console.log('Employee added successfully');
     }
     catch (error) {
-        console.error('Error -', error);
+        console.error('Add Error -', error);
         throw error;
     }
 };
@@ -31,7 +31,7 @@ export const deleteEmployee = async (first_name: string, last_name: string) => {
         console.log('Employee deleted');
     }
     catch (error) {
-        console.error('Error -', error);
+        console.error('Delete Error -', error);
         throw error;
     }
 };
@@ -43,7 +43,7 @@ export const updateEmployeeRole = async (employeeId: number, newRoleId: number) 
         console.log('Employee role updated');
     }
     catch (error) {
-        console.error('Error -', error);
+        console.error('Update Error -', error);
         throw error; // Rethrow the error for handling
     }
 };
@@ -55,7 +55,7 @@ export const updateEmployeeManager = async (employeeId: number, newManagerId: nu
         console.log('Employee manager updated');
     }
     catch (error) {
-        console.error('Error -', error);
+        console.error('Update Error -', error);
         throw error;
     }
 };
@@ -84,7 +84,7 @@ export const listEmployeesWithDetails = async () => {
         return result.rows; // Returns the list of employees with detailed information
     }
     catch (error) {
-        console.error('Error -', error);
+        console.error('List Error -', error);
         throw error; // Rethrow the error for further handling if needed
     }
 };

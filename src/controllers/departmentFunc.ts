@@ -7,7 +7,7 @@ export const getDepartments = async () => {
         return result.rows; // Return the array of department objects
     }
     catch (error) {
-        console.error('Error -', error); 
+        console.error('Get Error -', error); 
         throw error; 
     }
 };
@@ -19,7 +19,7 @@ export const viewAllDepartments = async () => {
         return result.rows; // Return the array of all department records
     }
     catch (error) {
-        console.error('Error -', error); 
+        console.error('View Error -', error); 
         throw error;
     }
 };
@@ -37,7 +37,7 @@ export const addDepartment = async (name: string) => {
         console.log('Department added');
     }
     catch (error) {
-        console.error('Error -', error); 
+        console.error('Add Error -', error); 
         throw error;
     }
 };
@@ -49,7 +49,7 @@ export const deleteDepartment = async (name: string) => {
         console.log('Department deleted'); 
     }
     catch (error) {
-        console.error('Error -', error); 
+        console.error('Delete Error -', error); 
         throw error;
     }
 };
@@ -68,7 +68,7 @@ export const viewDepartmentBudget = async (departmentId: number) => {
         return totalBudget; // Return the total budget
     }
     catch (error) {
-        console.error('Error - ', error); 
+        console.error('View Error - ', error); 
         throw error;
     }
 };

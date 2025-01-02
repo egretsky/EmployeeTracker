@@ -4,6 +4,8 @@
 
 Build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and PostgreSQL.
 
+### Video Walk Through
+https://drive.google.com/file/d/1Zpf2Z36vYtjbMp9oepJXZaUH-I3Cyxgo/view?usp=drive_link
 
 ### User Story
 
