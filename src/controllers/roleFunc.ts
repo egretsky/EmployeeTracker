@@ -17,7 +17,7 @@ export const viewAllRoles = async () => {
         return result.rows; // Returns the list of roles with department names
     }
     catch (error) {
-        console.error('Error -', error); 
+        console.error('View Error -', error); 
         throw error; 
     }
 };
@@ -29,7 +29,7 @@ export const addRole = async(title: string, salary: number, departmentId: number
         console.log('Role added'); 
     }
     catch (error) {
-        console.error('Error -', error); 
+        console.error('Add Error -', error); 
         throw error; 
     }
 };
@@ -41,7 +41,7 @@ export const deleteRole = async (roleId: number) => {
         console.log('Role deleted'); 
     }
     catch (error) {
-        console.error('Error -', error); 
+        console.error('Delete Error -', error); 
         throw error; 
     }
 };
